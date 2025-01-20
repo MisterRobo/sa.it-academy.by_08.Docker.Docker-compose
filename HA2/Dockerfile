@@ -19,3 +19,4 @@ COPY --from=builder /app /app
 # Expose port and set entrypoint
 EXPOSE 5000
 CMD ["python", "app.py"]
+

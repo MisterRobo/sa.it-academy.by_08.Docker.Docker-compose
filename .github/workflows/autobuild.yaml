@@ -22,7 +22,7 @@ jobs:
       - name: Build and Push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./HA2
           file: ./HA2/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/web-app:latest
